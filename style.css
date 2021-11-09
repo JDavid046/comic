@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+
+.header{
+    background-color: rgb(255, 0, 0);
+    height: 100px;    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-column{
+    float: left;
+    width: 35%;
+    padding: 10px;  
+    height: 100%;
+    text-align: center;
+}
+
+.detail-column{
+    float: left;
+    width: 65%;
+    padding: 10px;  
+    height: 100%;
+}
+
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .image-column {
+      width: 100%;
+    }
+    .detail-column {
+        width: 100%;
+      }
+  }
