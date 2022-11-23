@@ -13,6 +13,13 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <script>
+        const regex = /\$|\,|\./g;
+        let valor = '305,000';
+        let clave = '9400004254';
+        let value = valor.replace(regex,'');
+        console.log(value);
+    </script>
     <div>
         <div class="header-blue">
             <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
